@@ -12,7 +12,7 @@ public abstract class Piece {
 		return board;
 	}
 
-	public abstract Piece possibleMoves();
-	public abstract Boolean possibleMove(Position position);
-	public abstract Boolean isThereAnyPossibleMove();
+//	public abstract Piece possibleMoves();
+//	public abstract Boolean possibleMove(Position position);
+//	public abstract Boolean isThereAnyPossibleMove();
 }
