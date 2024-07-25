@@ -12,7 +12,23 @@ public abstract class Piece {
 		return board;
 	}
 
-//	public abstract Piece possibleMoves();
-//	public abstract Boolean possibleMove(Position position);
-//	public abstract Boolean isThereAnyPossibleMove();
+	public abstract boolean[][] possibleMoves();
+	
+	public boolean possibleMove(Position position) {
+		return possibleMoves()[position.getRow()][position.getColumn()];
+	}; 
+	
+	public boolean isThereAnyPossibleMove() {
+		boolean[][] mat = possibleMoves();
+		
+		for (int i = 0; i < board.getRows(); i++) {
+			for (int j = 0; j < board.getColumns(); j++) {
+				if (mat[i][j]) {
+					return true;
+				}
+			}
+		}
+		
+		return false;
+	};
 }
