@@ -5,6 +5,7 @@ import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
+import boardgame.BoardException;
 import chess.ChessException;
 import chess.ChessMatch;
 import chess.ChessPiece;
@@ -43,6 +44,9 @@ public class Program {
 				System.out.println(e.getMessage());
 				sc.nextLine();
 			} catch (InputMismatchException e) {
+				System.out.println(e.getMessage());
+				sc.nextLine();
+			} catch (BoardException e) {
 				System.out.println(e.getMessage());
 				sc.nextLine();
 			}
