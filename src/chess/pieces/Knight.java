@@ -8,7 +8,7 @@ import chess.Color;
 public class Knight extends ChessPiece {
 
 	public String toString() {
-		return "H";
+		return "N";
 	}
 	
 	public Knight(Board board, Color color) {
