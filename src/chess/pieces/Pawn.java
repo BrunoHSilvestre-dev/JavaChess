@@ -60,6 +60,8 @@ public class Pawn extends ChessPiece {
 				mat[right.getRow() + colorDirectionMultiplier][right.getColumn()] = true;
 			}
 		}
+		
+		//special move promotion
 				
 		return mat;
 	}
